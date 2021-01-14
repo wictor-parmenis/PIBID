@@ -11,7 +11,7 @@ body{
     background-size: cover;
 }
 
-.container{
+.container2{
     text-align: center;
     
 }
@@ -19,11 +19,12 @@ body{
 .title{
     margin-top: 1em;
     margin-bottom: 1em;
-    background-color: white;
+    background-color: cornflowerblue;
     display: inline-block;
     padding: 1.5%;
     border: brown 2px solid;
     border-radius: 2%;
+    color: white;
 }
 
 
@@ -32,7 +33,7 @@ body{
     display: grid;
     grid-template-columns: 20% 20% 20%;
     justify-content: center;
-    height: 30vw;
+    height: 28vw;
     align-items: flex-end;
 }
 
@@ -60,7 +61,8 @@ body{
     align-items: flex-end;
     justify-content: center;
     grid-gap: 5%;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
     color: black;
     
 }
@@ -69,4 +71,17 @@ body{
     padding: 0.5em;
     border-radius: 3%;
     border: grey solid 2px;
+}
+
+#btn_game{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: grey;
+    color: white;
+}
+
+#btn_game:hover{
+    background-color: cornflowerblue;
 }

@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <title>Ranking dos grupos</title>
 </head>
 <body>
     <div class="container">
         <h1 class="title">Ranking dos grupos</h1>
         <div class="ranking">
-            <div id="group_one" class="groups">0</div>
-            <div id="group_two" class="groups">0</div>
-            <div id="group_three" class="groups">0</div>
+            <div id="group_one" class="groups">
+                <p class="score">0</p>
+            </div>
+            <div id="group_two" class="groups">
+                <p class="score">0</p>
+            </div>
+            <div id="group_three" class="groups">
+                <p class="score">0</p>
+            </div>
         </div>
-        <div class="inputs">
+        <!-- <div class="inputs">
             <input type="number" placeholder="Grupo A" class="group_points" id="group_1">
             <input type="number" placeholder="Grupo B" class="group_points" id="group_2">
             <input type="number" placeholder="Grupo C" class="group_points" id="group_3">
+        </div> -->
+        <div class="btn_ranking">
+            <button class="btn btn_game" id="btn_game" onclick="update()"><b>Update</b></button>
+            <button class="btn btn_game" id="btn_clear" onclick="clear()"><b>Clear</b></button>
+            <button class="btn btn_game" id="btn_game2" onclick="update2()"><b>Update</b></button>
+            <button class="btn btn_game" id="btn_clear2" onclick="clear2()"><b>Clear</b></button>
+            <button class="btn btn_game" id="btn_game3" onclick="update3()"><b>Update</b></button>
+            <button class="btn btn_game" id="btn_clear3" onclick="clear3()"><b>Clear</b></button>
         </div>
-        <button class="btn btn_game" id="btn_game" onclick="update()"><b>Update</b></button>
-        <button class="btn btn_game" id="btn_clear" onclick="clear()"><b>Clear</b></button>
         
     </div>
     <script src="./script/script.js"></script>

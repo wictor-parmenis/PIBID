@@ -179,16 +179,30 @@ footer a:hover{
 @media (max-width: 600px){
     .suport{
         margin-bottom: 2em;
-        height: 35em;
+        height: 27em;
         background-color: white;
         padding: 2em;
+        text-align: center;
         
     }
 
+    #img1{
+    /* margin-top: 1em; */
+    height: 6em;
+    /* margin-left: 1em; */
+    display: inline-block;
+    
+    }
+
     #img2{
-        margin-left: 5.5em;
-        
-    } 
+        height: 9em;
+        /* margin-right: 6em; */
+        /* margin-left: 5.5em; */
+        /* transform: translateX(50%); */
+        margin-top: 2em;
+        margin-left: 6em;
+        display: inline-block;
+    }
     
     footer{
         height: 4em;

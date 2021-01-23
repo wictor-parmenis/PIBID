@@ -11,15 +11,17 @@ bar_three = document.getElementsByClassName('score')[2]
 div_one  = document.getElementById('group_one')
 let num = 0;
 let padding = 0;
+let up = 0;
 // console.log(group_1, group_2, group_3, btn_update, btn_clear)
 
 function update(){
     num ++;
+    up += 20;
     bar_one.innerHTML = `<p>${num}</p>`
     if (num == 1){
         div_one.style.height = `${100}px`
     }else{
-        div_one.style.height = `${num+50*num}px`
+        div_one.style.height = `${num+98+up}px`
     }
     
 

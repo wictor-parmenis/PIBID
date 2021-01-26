@@ -19,7 +19,7 @@
 
  .logo_title{
     font-family: 'Noto Sans KR', sans-serif;
-    padding: 1%;
+    padding: 1.5%;
     color: var(--secondary-color);
     text-align: left;
 }
@@ -27,6 +27,13 @@
 header{
     background-color: var(--primary-color);
     margin-bottom: 2em;
+}
+
+.logo{
+    height: 3.5em;
+    float: left;
+    margin-right: 1em;
+    transform: translateY(10%);
 }
 
 .parg{
@@ -66,7 +73,7 @@ header{
 } 
 .info{
     margin-bottom: 2em;
-    color: #4638A0;
+    color: var(--primary-color);
 }
 
 
@@ -135,6 +142,10 @@ a{
     padding: 2em;
 }
 
+.suport h2{
+    font-size: 1.8em;
+}
+
 #img1{
     margin-top: 1em;
     height: 10em;
@@ -150,7 +161,7 @@ a{
 }
 
 footer{
-    height: 3em;
+    height: 2.5em;
     padding: 2em;
     font-size: 0.7em;
     background-color: var(--primary-color);

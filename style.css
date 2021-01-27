@@ -32,7 +32,8 @@ header{
 .logo{
     height: 3.5em;
     float: left;
-    margin-right: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
     transform: translateY(10%);
 }
 
@@ -196,41 +197,29 @@ footer a{
 @media (max-width: 600px){
     .suport{
         margin-bottom: 2em;
-        height: 27em;
+        height: 20em;
         background-color: white;
         padding: 2em;
         text-align: center;
         
     }
 
+    .imgs{
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+        align-items: center;
+        
+    }
     #img1{
-    /* margin-top: 1em; */
-    height: 6em;
-    /* margin-left: 1em; */
-    display: inline-block;
-    
+        height: 5.5em;
+        margin-left: 25%;
+        
     }
 
     #img2{
-        height: 9em;
-        /* margin-right: 6em; */
-        /* margin-left: 5.5em; */
-        /* transform: translateX(50%); */
-        margin-top: 2em;
-        margin-left: 6em;
-        display: inline-block;
-    }
-    
-    footer{
-        height: 4em;
-        padding: 1.5em;
-        font-size: 1em;
-        background-color: var(--terciary-color);
-        color: black;
-        text-align: center;
-    }
-    
-    footer a{
-        color: var(--primary-color);
+        height: 8em;
+        
+        
     }
 }

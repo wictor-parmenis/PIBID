@@ -91,7 +91,7 @@ header{
     display: none;
     padding-bottom: 2em;
     color: var(--primary-color);
-    margin-top: 2.5em; 
+    margin-top: 3em; 
     /* transform: translateY(50%); */
     animation: slide 1s;
 }

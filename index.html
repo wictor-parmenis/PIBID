@@ -25,7 +25,7 @@
         <div id="questions" v-for="question in questions">
 
             <div id="q1" class="ask">
-                <a href="#" ><p class="color_p"> {{question.ask}} </p></a>
+                <a href="#" @click=show(question.id_answer) ><p class="color_p"> {{question.ask}} </p></a>
             </div>
             <div id="a1" class=""> {{question.answer}} </div>
 <!--
@@ -117,6 +117,18 @@
                     answer: 'A ficha 19 só poderá ser liberada depois que todos os professores fecharem o ano letivo no siepe de 2020.'
                 }
             ]
+        },
+        methods: {
+            show(id){
+                console.log(id)
+                var answer = document.getElementById(id)
+                if (answer.style.display == 'block'){
+                    answer.style.display = 'none';
+                }else{
+                    answer.style.display = 'block';
+                    answer.style.marginBottom = '1em'
+                }
+            }
         }
     })
 </script>

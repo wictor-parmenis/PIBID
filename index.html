@@ -11,7 +11,7 @@
     <title>FAQ | Escola Estadual Lions de Parnamirim</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <header>
             <img src="lions.png" alt="" class="logo">
             <h3 class="logo_title">
@@ -23,10 +23,11 @@
         <h3 class="subtitle2">Respostas rápidas para as principais perguntas sobre o colégio em tempos de pandemia.</h3>
         
         <div id="questions" v-for="question in questions">
-            <div v-bind:id="" v-bind:class="">
-                <a href="#" v-bind:onclick="show('question.id_answer')"><p class="color_p"> {{question.ask} </p></a>
+
+            <div id="q1" class="ask">
+                <a href="#" ><p class="color_p"> {{question.ask}} </p></a>
             </div>
-            <div v-bind:id="" v-bind:class=""> {{question.answer}} </div>
+            <div id="a1" class=""> {{question.answer}} </div>
 <!--
             <div id="q2" class="ask">
                 <a href="javascript: void(0);" onclick="show('a2')"><p class="color_p">A partir de qual momento se poderá pegar a ficha 19 ?</p></a>
@@ -92,7 +93,7 @@
 </body>
 <script>    
     let app = new Vue({
-        el: '#questions',
+        el: '#container',
         data: {
             questions: [
                 {

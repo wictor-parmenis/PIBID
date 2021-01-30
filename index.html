@@ -21,13 +21,13 @@
         <h1 class="subtitle">FAQs</h1>
         <br>
         <h3 class="subtitle2">Respostas rápidas para as principais perguntas sobre o colégio em tempos de pandemia.</h3>
-        <div class="questions">
-
-            <div id="q1" class="ask">
-                <a href="javascript: void(0);" onclick="show('a1')"><p class="color_p">Quando voltarão as aulas no primeiro semestre de 2021?</p></a>
+        
+        <div id="questions" v-for="question in questions">
+            <div v-bind:id="" v-bind:class="">
+                <a href="#" v-bind:onclick="show('question.id_answer')"><p class="color_p"> {{question.ask} </p></a>
             </div>
-            <div id="a1" class="answers"> As aulas voltarão na data: 04/02/2021.</div>
-
+            <div v-bind:id="" v-bind:class=""> {{question.answer}} </div>
+<!--
             <div id="q2" class="ask">
                 <a href="javascript: void(0);" onclick="show('a2')"><p class="color_p">A partir de qual momento se poderá pegar a ficha 19 ?</p></a>
             </div>
@@ -48,7 +48,7 @@
             </div>
             <div id="a5" class="answers"> 3181-2917 </div>
 
-            <!-- <div id="q6" class="ask">
+             <div id="q6" class="ask">
                 <a href="javascript: void(0);" onclick="show('a6')"><p class="color_p">Pergunta 1 ?</p></a>
             </div>
             <div id="a6" class="answers"> Resposta 6?</div>
@@ -71,9 +71,9 @@
             <div id="q10" class="ask">
                 <a href="javascript: void(0);" onclick="show('a10')"><p class="color_p">Pergunta 1 ?</p></a>
             </div>
-            <div id="a10" class="answers"> Resposta 1?</div> -->
+            <div id="a10" class="answers"> Resposta 1?</div> 
 
-            
+        -->      
         </div>
         <div class="suport">
             <h2 >Apoio:</h2>
@@ -88,5 +88,35 @@
             <p>2021 - Colégio Estadual Lions de Parnamirim</p>
             <p><a href="https://github.com/wictor-parmenis">Wictor Tec &copy; </a> | <a href="#">PIBID UFRPE</a></p>
         </footer>    
+<script src="vue.js"></script>
 </body>
+<script>    
+    let app = new Vue({
+        el: '#questions',
+        data: {
+            questions: [
+                {
+                    // Ask
+                    id: 'q1',
+                    class: 'ask',
+                    ask: 'Quando voltarão as aulas no primeiro semestre de 2021?',
+                    // Answer
+                    id_answer: 'a1',
+                    class_answer: 'answers',
+                    answer: 'As aulas voltarão na data: 04/02/2021.'
+                },
+                {
+                    // Ask
+                    id: 'q2',
+                    class: 'ask',
+                    ask: 'A partir de qual momento se poderá pegar a ficha 19 ?',
+                    // Answer
+                    id_answer: 'a2',
+                    class_answer: 'answers',
+                    answer: 'A ficha 19 só poderá ser liberada depois que todos os professores fecharem o ano letivo no siepe de 2020.'
+                }
+            ]
+        }
+    })
+</script>
 </html>

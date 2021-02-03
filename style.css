@@ -58,6 +58,9 @@ header{
         opacity: 100%;
     }
 }
+.red-text{
+    color: rgb(253, 31, 31);
+}
 
 .subtitle{
     color: var(--primary-color);
@@ -94,6 +97,9 @@ header{
     margin-top: 3em; 
     /* transform: translateY(50%); */
     animation: slide 1s;
+}
+.title-topic{
+    color: var(--quaternary-color);
 }
 
 @keyframes slide{

@@ -18,7 +18,7 @@
             <h3 class="logo_title">
             Escola Estadual Lions de Parnamirim
         </h3>
-        </header>
+        </header> 
         <h1 class="subtitle">FAQs</h1>
         <br>
         <h3 class="subtitle2">Respostas rápidas para as principais perguntas sobre o colégio em tempos de pandemia.</h3>
@@ -28,8 +28,24 @@
             <div id="q1" class="ask">
                 <a href="#" @click='show = !show' ><p class="color_p"> {{question.ask}} </p></a>
             </div>
-            <div v-if='show' id="a1" class=""> {{question.answer}} </div>
-<!--
+            <div id="a1" class="answers">
+                     <ul>
+                         <h4 class="">As aulas presenciais retornaram no começo de fevereiro de 2021. Confira baixo as datas para o retorno de cada turma do colégio.</h4>
+                         <br>
+                         <h4>Turno da manhã</h4>
+                         <li>Os estudantes matriculados no 3º ano para o turno da manhã, retornarão na próxima quinta feira, dia 04/02/2021 às 7:30h;</li>
+                         <br>
+                         <h4>Turno da tarde</h4>
+                         <li>Dia 04/02/2021 (quinta-feira) -  Retornam os alunos matriculados no 1º ANO; </li>
+                         <li>Dia 08/02/2021 (segunda-feira) – Retornam os alunos matriculados no 2º ANO;</li>    
+                         <li>Dia 09/02/2021 (terça-feira) – Retornam os alunos matriculados no 3º ANO;</li>
+                         <li class="red-text">Obs: Os alunos do fundamental devem aguardar o início das aulas remotas.</li>
+                        <br>
+                        <h4>Turno da noite (EJA)</h4>
+                        <li>Dia 04/02/2021 (quinta-feira) -  Retornam os alunos matriculados na modalidade EJA. </li></li>
+                    </ul>
+            </div>
+
             <div id="q2" class="ask">
                 <a href="javascript: void(0);" onclick="show('a2')"><p class="color_p">A partir de qual momento se poderá pegar a ficha 19 ?</p></a>
             </div>
@@ -55,6 +71,7 @@
             </div>
             <div id="a6" class="answers"> Resposta 6?</div>
 
+            
             <div id="q7" class="ask">
                 <a href="javascript: void(0);" onclick="show('a7')"><p class="color_p">Pergunta 1 ?</p></a>
             </div>

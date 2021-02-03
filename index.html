@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <title>FAQ | Escola Estadual Lions de Parnamirim</title>
@@ -25,9 +26,9 @@
         <div id="questions" v-for="question in questions">
 
             <div id="q1" class="ask">
-                <a href="#" @click=show(question.id_answer) ><p class="color_p"> {{question.ask}} </p></a>
+                <a href="#" @click='show = !show' ><p class="color_p"> {{question.ask}} </p></a>
             </div>
-            <div id="a1" class=""> {{question.answer}} </div>
+            <div v-if='show' id="a1" class=""> {{question.answer}} </div>
 <!--
             <div id="q2" class="ask">
                 <a href="javascript: void(0);" onclick="show('a2')"><p class="color_p">A partir de qual momento se poderá pegar a ficha 19 ?</p></a>
@@ -85,10 +86,18 @@
             </div>
         </div>
         </div>
-        <footer>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #0A3DAB; color: white;" >
+            © 2021 Copyright:
+            <a style="color: #F9C910" href="https://mdbootstrap.com/">Wictor Tec | UFRPE</a>
+        </div>
+        <!-- Copyright -->
+        </footer>
+
+        <!-- <footer class='text-center'>
             <p>2021 - Colégio Estadual Lions de Parnamirim</p>
             <p><a href="https://github.com/wictor-parmenis">Wictor Tec &copy; </a> | <a href="#">PIBID UFRPE</a></p>
-        </footer>    
+        </footer>     -->
 <script src="vue.js"></script>
 </body>
 <script>    
@@ -116,20 +125,10 @@
                     class_answer: 'answers',
                     answer: 'A ficha 19 só poderá ser liberada depois que todos os professores fecharem o ano letivo no siepe de 2020.'
                 }
-            ]
-        },
-        methods: {
-            show(id){
-                console.log(id)
-                var answer = document.getElementById(id)
-                if (answer.style.display == 'block'){
-                    answer.style.display = 'none';
-                }else{
-                    answer.style.display = 'block';
-                    answer.style.marginBottom = '1em'
-                }
-            }
+            ],
+            show: false
         }
+        
     })
 </script>
 </html>

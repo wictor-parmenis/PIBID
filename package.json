@@ -1,0 +1,23 @@
+{
+  "name": "PIBID",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wictor-parmenis/PIBID.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wictor-parmenis/PIBID/issues"
+  },
+  "homepage": "https://github.com/wictor-parmenis/PIBID#readme",
+  "dependencies": {
+    "bootstrap": "4.0"
+  }
+}

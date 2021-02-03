@@ -214,21 +214,13 @@ footer a{
 
     .font-little{
         font-size: 0.8em;
-        transform: translateY(-50%);
+        
     }
 
     .ask{
         padding: 0.7em;
         width: 70%;
-        text-align: center;
-        margin: auto;
-        background-color: var(--primary-color);
-        border: 1px var(--secondary-color) solid;
-        border-radius: 5%;
-        margin-bottom: 1.5em;
-        -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
-        -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
-        box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+        
         
         
     }

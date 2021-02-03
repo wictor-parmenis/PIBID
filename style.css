@@ -18,28 +18,30 @@
 }
 
  .logo_title{
-    font-family: 'Noto Sans KR', sans-serif;
-    padding: 1.5%;
-    color: var(--secondary-color);
-    text-align: left;
+    padding: 5%;
 }
 
 header{
     background-color: var(--primary-color);
     margin-bottom: 2em;
+    height: 3.5em;
+}
+
+header h4{
+    color: white;
+    text-align: left;
+    transform: translateY(40%);
 }
 
 .logo{
-    height: 3.5em;
+    height: 3em;
     float: left;
     margin-right: 0.5em;
     margin-left: 0.5em;
     transform: translateY(10%);
 }
 
-.parg{
-    font-family: 'Noto Sans KR', sans-serif;
-}
+
 
 @keyframes opacity{
     0%{
@@ -61,6 +63,8 @@ header{
 .red-text{
     color: rgb(253, 31, 31);
 }
+
+
 
 .subtitle{
     color: var(--primary-color);
@@ -211,6 +215,27 @@ footer a{
 
 
 @media (max-width: 600px){
+
+    .logo-title{
+        transform: translateY(5%); 
+        
+    }
+
+    header h4{
+        color: white;
+        text-align: left;
+        transform: translateY(13%);
+        font-size: 1.2em;
+    }
+
+    .ask{
+        padding: 0.7em;
+        width: 70%;
+        
+        
+        
+    }
+
     .suport{
         margin-bottom: 2em;
         height: 20em;
@@ -240,5 +265,7 @@ footer a{
     #subtitle-main{
         margin: auto;
         text-align: center;
+        font-size: 1.1em;
     }
+
 }

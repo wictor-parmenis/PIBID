@@ -12,25 +12,33 @@
     <title>FAQ | Escola Estadual Lions de Parnamirim</title>
 </head>
 <body>
-    <div id="container">
-        <header>
+    <div id="container" >
+        <!-- <header>
             <img src="lions.png" alt="" class="logo">
             <h3 class="logo_title">
             Escola Estadual Lions de Parnamirim
         </h3>
-        </header> 
-        <h1 class="subtitle">FAQs</h1>
-        <br>
-        <h3 class="subtitle2">Respostas rápidas para as principais perguntas sobre o colégio em tempos de pandemia.</h3>
-        
-        <div id="questions" v-for="question in questions">
+        </header>  -->
 
-            <div id="q1" class="ask">
-                <a href="#" @click='show = !show' ><p class="color_p"> {{question.ask}} </p></a>
+        <nav class="navbar" style="background-color: #0A3DAB;">
+            <a class="navbar-brand" style="color: white;" href="#">
+              <img src="lions.png" width="35" height="35" class="d-inline-block align-top" alt="">
+              Escola Estadual Lions de Parnamirim
+            </a>
+          </nav>
+          <br>
+        <h1 class="subtitle">FAQs</h1>
+        <hr>
+        <h3 class="subtitle2 h3" id="subtitle-main">Respostas rápidas para as principais perguntas sobre o colégio em tempos de pandemia.</h3>
+        
+        <div id="questions">
+
+            <div id="q1" class="ask rounded">
+                <a href="javascript: void(0);" onclick="show('a1')" ><h5 class="color_p"> Quando retornarão as aulas na Escola Lions de Parnamirim em 2021 ? </h5></a>
             </div>
             <div id="a1" class="answers">
                      <ul>
-                         <h4 class="">As aulas presenciais retornaram no começo de fevereiro de 2021. Confira baixo as datas para o retorno de cada turma do colégio.</h4>
+                         <h4 class="h4">As aulas presenciais retornaram no começo de fevereiro de 2021. Confira baixo as datas para o retorno de cada turma do colégio.</h4>
                          <br>
                          <h4>Turno da manhã</h4>
                          <li>Os estudantes matriculados no 3º ano para o turno da manhã, retornarão na próxima quinta feira, dia 04/02/2021 às 7:30h;</li>
@@ -39,34 +47,34 @@
                          <li>Dia 04/02/2021 (quinta-feira) -  Retornam os alunos matriculados no 1º ANO; </li>
                          <li>Dia 08/02/2021 (segunda-feira) – Retornam os alunos matriculados no 2º ANO;</li>    
                          <li>Dia 09/02/2021 (terça-feira) – Retornam os alunos matriculados no 3º ANO;</li>
-                         <li class="red-text">Obs: Os alunos do fundamental devem aguardar o início das aulas remotas.</li>
+                         <li class="text-danger">Obs: Os alunos do fundamental devem aguardar o início das aulas remotas.</li>
                         <br>
                         <h4>Turno da noite (EJA)</h4>
                         <li>Dia 04/02/2021 (quinta-feira) -  Retornam os alunos matriculados na modalidade EJA. </li></li>
                     </ul>
             </div>
 
-            <div id="q2" class="ask">
-                <a href="javascript: void(0);" onclick="show('a2')"><p class="color_p">A partir de qual momento se poderá pegar a ficha 19 ?</p></a>
+            <div id="q2" class="ask rounded">
+                <a href="javascript: void(0);" onclick="show('a2')"><h5 class="color_p">A partir de qual momento se poderá pegar a ficha 19 ?</h5></a>
             </div>
             <div id="a2" class="answers"> A ficha 19 só poderá ser liberada depois que todos os professores fecharem o ano letivo no siepe de 2020.</div>
 
-            <div id="q3" class="ask">
-                <a href="javascript: void(0);" onclick="show('a3')"><p class="color_p">Qual o horário de atendimento da secretaria da escola ?</p></a>
+            <div id="q3" class="ask rounded">
+                <a href="javascript: void(0);" onclick="show('a3')"><h5 class="color_p">Qual o horário de atendimento da secretaria da escola ?</h5></a>
             </div>
             <div id="a3" class="answers"> O atendimento na secretaria é no horário comercial: de 9hrs às 12hrs e de 13hrs às 17hs.</div>
 
-            <div id="q4" class="ask">
-                <a href="javascript: void(0);" onclick="show('a4')"><p class="color_p">Qual é o prazo para pegar a ficha 19??</p></a>
+            <div id="q4" class="ask rounded">
+                <a href="javascript: void(0);" onclick="show('a4')"><h5 class="color_p">Qual é o prazo para pegar a ficha 19??</h5></a>
             </div>
             <div id="a4" class="answers"> Entre 20 a 30 dias após o encerramento do ano letivo no Siepe, por parte dos professores.</div>
 
-            <div id="q5" class="ask">
-                <a href="javascript: void(0);" onclick="show('a5')"><p class="color_p">Qual o telefone da secretaria da escola ?</p></a>
+            <div id="q5" class="ask rounded">
+                <a href="javascript: void(0);" onclick="show('a5')"><h5 class="color_p">Qual o telefone da secretaria da escola ?</h5></a>
             </div>
             <div id="a5" class="answers"> 3181-2917 </div>
 
-             <div id="q6" class="ask">
+             <!-- <div id="q6" class="ask">
                 <a href="javascript: void(0);" onclick="show('a6')"><p class="color_p">Pergunta 1 ?</p></a>
             </div>
             <div id="a6" class="answers"> Resposta 6?</div>
@@ -90,26 +98,28 @@
             <div id="q10" class="ask">
                 <a href="javascript: void(0);" onclick="show('a10')"><p class="color_p">Pergunta 1 ?</p></a>
             </div>
-            <div id="a10" class="answers"> Resposta 1?</div> 
-
-        -->      
+            <div id="a10" class="answers"> Resposta 1?</div>  -->
+      
         </div>
+        <br>
+        <hr>
         <div class="suport">
             <h2 >Apoio:</h2>
             <br>
             <div class="imgs">
-                <img src="02072019_logomarca_pibid (1).png" alt=""  id="img1">
-                <img src="Marcas UFRPE-02 (1).gif" alt=""  id="img2">
+                <img   src="02072019_logomarca_pibid (1).png" alt=""  id="img1">
+                <img  src="Marcas UFRPE-02 (1).gif" alt=""  id="img2">
             </div>
         </div>
         </div>
+        <br>
+        <br>
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: #0A3DAB; color: white;" >
             © 2021 Copyright:
-            <a style="color: #F9C910" href="https://mdbootstrap.com/">Wictor Tec | UFRPE</a>
+            <a style="color: #F9C910" href="https://github.com/wictor-parmenis/">Wictor Tec | UFRPE</a>
         </div>
-        <!-- Copyright -->
-        </footer>
+       
 
         <!-- <footer class='text-center'>
             <p>2021 - Colégio Estadual Lions de Parnamirim</p>
